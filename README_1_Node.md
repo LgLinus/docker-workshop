@@ -48,7 +48,7 @@ We want the server to restart when making a change to the source code. In order 
 #### Install nodemon on container
 Make the following changes to the Dockerfile.
 
-Execute the command `npm install -g nodemon`, as one of the first actions. This will install nodemon globally on the container. And then change the CMD command to simply `CMD ["nodemon"]`
+Execute the command `npm install -g nodemon`. This will install nodemon globally on the container. And then change the CMD command to simply `CMD ["nodemon"]`
 
 #### Link folders on host to container
 The -v flag in docker run specifies the volume to connect. The host and container is divided by `:`. The first part is the host path and the second path is where on the container it will be stored. In this case we link it to the working directory of the image. This will make it so any changes done in our host folder will be applied in the container too.

@@ -9,7 +9,7 @@ Resources
 
 [Docker compose setup](https://docs.docker.com/compose/install/ )
 ### Setup
-Folow the unstructions in the docker setup and docker compose page. 
+Folow the instructions in the docker setup and docker compose page. 
 
 If you're behind a proxy, make sure to update the ~/.docker/config.json file as following
 
@@ -61,10 +61,10 @@ Build image.
 docker build ./ -t image_name
 ```
 
-Run container based on image
+Run container based on a image file, with the ports exposed
 
 ```bash
-docker run 
+docker run <image_file> -p<hostPort>:<containerPort>
 ```
 
 

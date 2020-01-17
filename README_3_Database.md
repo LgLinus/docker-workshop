@@ -60,5 +60,4 @@ GRANT SELECT, INSERT ON test.items TO 'backend_user'@'%';
 ```
 
 ### Next
-
-If your container is up and running with hot reloading using docker-compose, goto README_4_Consuming_database.md
+In the next and final step we're going to connect the backend to the database. Your database and backend is up and running simultaneously you can proceed to the next step README_4_Consuming_database.md
