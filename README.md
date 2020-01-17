@@ -7,8 +7,9 @@ Resources
 
 [Docker setup](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
 
+[Docker compose setup](https://docs.docker.com/compose/install/ )
 ### Setup
-Folow the unstructions in the docker setup page. 
+Folow the unstructions in the docker setup and docker compose page. 
 
 If you're behind a proxy, make sure to update the ~/.docker/config.json file as following
 
@@ -69,4 +70,4 @@ docker run
 
 ### Next
 
-checkout branch workshop/1_node to proceed
+checkout README_1_node.md to proceed

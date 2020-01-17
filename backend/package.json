@@ -1,0 +1,23 @@
+{
+  "name": "docker-workshop",
+  "version": "1.0.0",
+  "description": "Workshop backend example in a docker container",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LgLinus/docker-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LgLinus/docker-workshop/issues"
+  },
+  "homepage": "https://github.com/LgLinus/docker-workshop#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  }
+}
