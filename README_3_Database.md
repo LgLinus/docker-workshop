@@ -55,7 +55,7 @@ INSERT INTO items(product,quantity,description) VALUES("Wine", 3, "3 bottles of 
 INSERT INTO items(product,quantity,description) VALUES("Cupcake", 10, "Deliciouse cupcakes");
 
 CREATE USER 'backend_user'@'%' IDENTIFIED BY 'backend_password';
-GRANT SELECT ON test.items TO 'backend_user'@'%';
+GRANT SELECT, INSERT ON test.items TO 'backend_user'@'%';
 
 ```
 

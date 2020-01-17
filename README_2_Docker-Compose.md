@@ -19,7 +19,12 @@ services:
         volumes:
             - <relative_path_to_source>:<container_workdir>
 ```
+Where context is the path to the folder your Dockerfile is located. Note that we can specify a relative path for the volume.
 
+### Exercise
+Create the docker-compose.yml file with above specification and replace the variables with the ones specific for this backend. Place the file in the root directory.
+
+Test out the application by running `docker-compose up --build`. Which will build the image and run the container with the space setup in the docker-comopse.yml file
 
 ### Next
 
