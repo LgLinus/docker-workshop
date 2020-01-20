@@ -5,7 +5,8 @@ app.get('/', (req, response) => {
   response.send('Hello World!!');
 });
 
-/*app.get("/items", (req, response) => {
+/*
+app.get("/items", (req, response) => {
   var mysql = require("mysql");
 
   var connection = mysql.createConnection({
