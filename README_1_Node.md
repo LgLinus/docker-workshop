@@ -36,7 +36,7 @@ curl localhost:81/
 ```
 
 #### Clarification
-`docker build ./backend`
+`docker build ./backend -t node_be`
 
 `docker run -p 84:8000 node_be`
 

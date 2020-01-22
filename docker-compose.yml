@@ -1,0 +1,22 @@
+version: '3'
+services:
+    backend:
+        container_name: compose-backend
+        build:
+            context: ./backend
+            dockerfile: ./Dockerfile
+        ports:
+        - 81:8000
+        volumes:
+            - ./backend:/usr/src/app
+
+    database:
+        image: mysql:5.7
+        container_name: database
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: test
+        ports:
+            - "3308:3306"
+        volumes:
+            - ./data_volume:/var/lib/mysql

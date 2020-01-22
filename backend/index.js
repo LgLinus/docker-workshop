@@ -5,28 +5,27 @@ app.get('/', (req, response) => {
   response.send('Hello World!!');
 });
 
-/*
-app.get("/items", (req, response) => {
-  var mysql = require("mysql");
+app.get('/items', (req, response) => {
+  var mysql = require('mysql');
 
   var connection = mysql.createConnection({
-    user: "USER",
-    password: "PASSWORD_FOR_USER",
-    host: "DATABASEHOST",
+    user: 'backend_user',
+    password: 'backend_password',
+    host: 'database',
     port: 3306,
-    database: "DATABASE"
+    database: 'test',
   });
 
   connection.connect();
 
-  connection.query("SELECT * FROM items", function(error, results, fields) {
+  connection.query('SELECT * FROM items', function(error, results, fields) {
     if (error) throw error;
 
     response.send(results);
   });
   connection.end();
 });
-*/
+
 app.listen(8000, () => {
   console.log('Example app listening on port 8000!');
 });
