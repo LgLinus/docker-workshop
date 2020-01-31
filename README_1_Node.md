@@ -7,7 +7,7 @@ In this part we're going to create a docker image and run it on our local machin
 ## Exercise 1
 Creating the Dockerfile
 
-+ Create a Dockerfile in the backend category which is based on a **node** image. For example node:10-alpine. 
++ Create a Dockerfile in the backend folder which is based on a **node** image. For example node:10-alpine. 
 
 + Specify the working directory for the dockerfile(ex /usr/src/app)
 

@@ -8,7 +8,7 @@ services:
         ports:
         - 81:8000
         volumes:
-            - ./backend:/usr/src/app
+            - ~/git/github/docker-workshop/backend:/usr/src/app
 
     database:
         image: mysql:5.7

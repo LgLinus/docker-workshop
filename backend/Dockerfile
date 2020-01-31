@@ -1,8 +1,9 @@
 FROM node:12-alpine
 RUN npm install -g nodemon
 WORKDIR /usr/src/app
-COPY package.json ./
+#COPY package.json ./
 RUN npm install
 
-COPY . .
+# COPY . .
+RUN ls
 CMD ["nodemon"]
