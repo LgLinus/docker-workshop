@@ -7,15 +7,15 @@ In this part we're going to create a docker image and run it on our local machin
 ## Exercise 1
 Creating the Dockerfile
 
-+ Create a Dockerfile in the backend folder which is based on a **node** image. For example node:10-alpine. 
++ Create a Dockerfile in the backend category which is based on a **node** image. For example node:10-alpine. 
 
-+ Specify the working directory for the dockerfile(ex /usr/src/)
++ Specify the working directory for the dockerfile(ex /usr/src/app)
 
 + Install your dependencies for the node application by copying over the package.json file and executing npm install. 
 
-+ Copy over all of the source files for the application to the working directory. So the container will have access to the needed files. Place them in /usr/src/app
++ Copy over all of the source files for the application to the working directory. So the container will have access to the needed files.
 
-+ Add an entry to the dockerfile that will execute npm start at startup. This will start the node server. Start app from /usr/src/app
++ Add an entry to the dockerfile that will execute npm start at startup. This will start the node server.
 
 IF behind a proxy, you might have to add Environment variables to the image for your proxy settings.
 
@@ -36,7 +36,7 @@ curl localhost:81/
 ```
 
 #### Clarification
-`docker build ./backend -t node_be`
+`docker build ./backend`
 
 `docker run -p 84:8000 node_be`
 
@@ -53,7 +53,7 @@ Execute the command `npm install -g nodemon`. This will install nodemon globally
 #### Link folders on host to container
 The -v flag in docker run specifies the volume to connect. The host and container is divided by `:`. The first part is the host path and the second path is where on the container it will be stored. In this case we link it to the working directory of the image. This will make it so any changes done in our host folder will be applied in the container too.
 ```bash
-docker run -v ~/git/github/docker-workshop/backend/src:/usr/src/app -p 84:8000 node_be
+docker run -v ~/git/github/docker-workshop/backend:/usr/src/app -p 84:8000 node_be
 ```
 
 Test if it works by making changes to your index.js while the container is running. Any changes in the source code should result in the server being restarted.
