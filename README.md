@@ -1,5 +1,7 @@
 # docker-workshop
-Workshop, introduction to Docker
+Workshop I setup for me and my team
+
+Introduction to Docker
 
 Resources
 
